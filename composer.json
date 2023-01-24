@@ -1,0 +1,52 @@
+{
+    "name": "volodymyr-klymniuk/sf-functional-test",
+    "description": "Extra functionality for work with Symfony functional tests",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "VolodymyrKlymniuk\\SfFunctionalTest\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Volodymyr Klymniuk",
+            "email": "Volodymyr.Klymniuk@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "doctrine/data-fixtures": "^1.6",
+        "justinrainbow/json-schema": "^5.2",
+        "nelmio/alice": "^3.12",
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpunit/phpunit": "^9.5",
+        "symfony/console": "^6.2",
+        "symfony/framework-bundle": "^6.2",
+        "symfony/property-access": "^6.2",
+        "symfony/browser-kit": "^6.2",
+        "symfony/phpunit-bridge": "^6.2",
+        "theofidry/alice-data-fixtures": "^1.6",
+        "symfony/dotenv": "^6.2"
+    },
+    "require-dev": {
+        "doctrine/orm": "^2.14",
+        "doctrine/mongodb-odm": "^2.1",
+        "ramsey/uuid": "^4.7",
+        "symfony/uid": "^6.2"
+    },
+    "suggest": {
+        "symfony/dotenv": "for use Env Listener which load env vars from paths",
+        "doctrine/doctrine-bundle": "for use Doctrine on test cases",
+        "doctrine/migrations": "for use Listener which run Doctrine migrations before test suite"
+    },
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-v4": "v4.x-dev",
+            "dev-master": "v1.x-dev"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}

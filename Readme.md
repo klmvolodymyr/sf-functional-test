@@ -2,7 +2,7 @@
 
 ## Install
    ```` bash
-   $ composer require php-solution/sf-functional-test
+   $ composer require volodymyr-klymniuk/sf-functional-test
    ````
 
 ## Load environment variables from files
@@ -92,11 +92,11 @@ protected function refreshDocument($document)
 1. Add config
 ```yaml
 swiftmailer:
-    disable_delivery: true
-    spool:
-        type: file
-        path: '%kernel.project_dir%/var/spool'
-    delivery_addresses: ~
+  disable_delivery: true
+  spool:
+    type: file
+    path: '%kernel.project_dir%/var/spool'
+  delivery_addresses: ~
 ```
 
 2. Add SpoolTrait and find methods
